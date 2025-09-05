@@ -30,11 +30,11 @@ jobs:
 
       - name: 下载 BPB worker.js
         run: |
-          wget -O origin.js https://raw.githubusercontent.com/bia-pain-bache/BPB-Worker-Panel/main/build/unobfuscated-worker.js
+          wget -O origin.js https://raw.githubusercontent.com/sudasu3474/Cloudflare-vless-trojan/refs/heads/main/Vless_workers_pages/nat64%E5%A5%97%E5%A3%B3%E7%89%88%E6%98%8E%E6%96%87.js
 
-      - name: 混淆 BPB worker.js
+      - name: 混淆 nat64套壳版明文.js
         run: |
-          javascript-obfuscator origin.js --output _worker.js \
+          javascript-obfuscator nat64套壳版明文.js --output _worker.js \
             --compact true \
             --control-flow-flattening false \
             --dead-code-injection false \
