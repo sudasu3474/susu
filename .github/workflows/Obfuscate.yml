@@ -34,7 +34,7 @@ jobs:
 
       - name: 混淆 nat64套壳版明文.js
         run: |
-          javascript-obfuscator nat64套壳版明文.js --output _worker.js \
+          javascript-obfuscator origin.js --output _worker.js \
             --compact true \
             --control-flow-flattening false \
             --dead-code-injection false \
